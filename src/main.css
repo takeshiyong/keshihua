@@ -1,0 +1,239 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;} 
+body{background:#fff;color:#333;font-size:12px; font-family:"Microsoft YaHei","Helvetica Neue",Arial,sans-serif;} 
+ 
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;} 
+ 
+a{text-decoration:none;} 
+a:link{color:#009;} 
+a:visited{color:#800080;} 
+a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
+
+/* 重写form表单内容 */
+.el-form-item__label {
+    color: #fff;
+}
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+    color: #ff1f0f;
+    margin-right: 0px;
+}
+.el-form--label-top .el-form-item__label {
+    padding: 0;
+}
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner, .el-message-box__input input.invalid, .el-message-box__input input.invalid{
+    border: 1px solid transparent;
+}
+.el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus, .el-message-box__input input.invalid, .el-message-box__input input.invalid:focus{
+    border: 1px solid #2483FF;
+}
+.el-input__inner {
+    border-radius: 0;
+    background: #1C222B;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    caret-color: #2483FF;
+}
+.el-input__inner:hover {
+    border: 1px solid #2483FF;
+}
+.el-input__inner:focus {
+    border: 1px solid #2483FF;
+}
+.el-form-item__error {
+    color: #ff1f0f;
+}
+/* select选择框样式重写 */
+.el-select-dropdown.el-popper {
+    background: #1C222B;
+    border-radius: 0;
+    border: 1px solid #2483FF;
+    padding: 0;
+    margin: 0;
+}
+.el-select:hover .el-input__inner {
+    border-color: #2483FF;
+}
+.el-input__inner {
+    color: #A1AEB3;
+}
+.el-select-dropdown.el-popper .el-scrollbar__bar.is-vertical{
+    right: 0;
+    opacity: 1;
+}
+.el-select-dropdown.el-popper .el-scrollbar__bar.is-vertical .el-scrollbar__thumb {
+    background: #454E57;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background: transparent;
+    border-left: 3px solid #2483ff!important;
+    color: #2483FF!important;
+}
+.el-select-dropdown__item.selected {
+    color: #BCC9D4;
+    font-weight: normal;
+}
+.el-select-dropdown__item.selected::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+    background: #2483ff;
+    position: absolute;
+    top: 13px;
+    left: 8px;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item {
+    border-left: 3px solid transparent;
+    color: #BCC9D4;
+}
+.el-scrollbar__view.el-select-dropdown__list {
+    padding: 0
+}
+.el-select-dropdown.el-popper .popper__arrow {
+    display: none;
+}
+/* 重写错误提示框样式 success 50E2C2  1B3964*/
+.error.el-message {
+    border-radius: 0px;
+    border-color: #F15532;
+    background: #5D2B3E;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.error.el-message p {
+    color: #fff!important;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.error .el-message__closeBtn {
+    color: #fff;
+}
+.error .F05532 {
+    color: #F05532;
+    font-size: 16px;
+}
+.success.el-message {
+    border-radius: 0px;
+    border-color: #2483FF;
+    background: #1B3964;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.success.el-message p {
+    color: #fff!important;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.success .el-message__closeBtn {
+    color: #fff;
+}
+.success .F05532 {
+    color: #50E2C2;
+    font-size: 16px;
+}
+/* 隐藏滚动条 */
+/* ::-webkit-scrollbar {display:none} */
+::-webkit-scrollbar {
+    background: 0 0;
+    width: 4px;
+    height: 4px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(153,173,181,.2);
+}
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
+
+.el-button--mini, .el-button--small {
+    border-radius: 0px;
+}
+
+/* 提示信息重写 */
+.el-tooltip__popper {
+    background: #1B3964!important;
+    border-radius: 0;
+    border: 1px solid #2483FF;
+    line-height: 0.8;
+}
+.el-tooltip__popper > .popper__arrow {
+    display: none;
+}
+
+/* 下拉框样式重写 */
+.el-dropdown-menu {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0;
+}
+.el-dropdown-menu__item {
+    color: #fff;
+    margin-bottom: 1px;
+    background: #1c222b;
+    line-height: 30px!important;
+    border-left: 3px solid transparent;
+}
+.el-dropdown-menu__item:hover {
+    background: #1A1B1D!important;
+    color: #fff!important;
+    border-left: 3px solid #2483FF;
+}
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+    border-bottom-color: #1c222b;
+}
+.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #1c222b;
+}
+
+/* checkbox标签 */
+.el-checkbox {
+    color: #fff;
+}
+
+/* input number 标签重写 */
+.el-input-number__decrease, .el-input-number__increase {
+    background: #A2A6AE;
+    top: 2px;
+
+}
+.el-input-number__decrease, .el-input-number__increase i {
+    color: #fff;
+}
+.el-input-number__decrease {
+    border-radius: 0px;
+    border-right: 0px;
+}
+.el-input-number__increase {
+    border-radius: 0px;
+    border-left: 0px;
+}
+
+/* table条形条 */
+.el-table::-webkit-scrollbar {
+    background: 0 0;
+    width: 4px;
+    height: 4px;
+}
+.el-table::-webkit-scrollbar-thumb {
+    background: rgba(153,173,181,.2);
+}
+.el-table::-webkit-scrollbar-track {
+    background: 0 0;
+}
+.el-table__body-wrapper::-webkit-scrollbar {
+    background: 0 0!important;
+    width: 4px!important;
+    height: 4px!important;
+}
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(153,173,181,.2)!important;
+}
+.el-table__body-wrapper::-webkit-scrollbar-track {
+    background: #333!important;
+}
+
+.modal-content-loopGroup .el-table--small td, .el-table--small th {
+    padding: 4px 0;
+}
